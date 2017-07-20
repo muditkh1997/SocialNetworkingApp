@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/llSignUpActivity"
+    android:background="@drawable/login_animation_list"
+    tools:context="mudit.com.myproject.Activities.SignUpActivity">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="180dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/signup1" />
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:id="@+id/tvInstagram"
+        android:gravity="center"
+        android:text="RockChat"
+        android:layout_gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="46sp"
+        android:textStyle="italic" />
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColorHint="@android:color/darker_gray"
+        android:background="#66F9F6F6"
+        android:layout_gravity="center"
+        android:backgroundTint="#FCF9F9"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:singleLine="true"/>
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColorHint="@android:color/darker_gray"
+        android:background="#66F9F6F6"
+        android:layout_gravity="center"
+        android:backgroundTint="#FCF9F9"
+        android:hint="Name"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:singleLine="true"/>
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColorHint="@android:color/darker_gray"
+        android:background="#66F9F6F6"
+        android:layout_gravity="center"
+        android:backgroundTint="#FCF9F9"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:singleLine="true"/>
+    <Button
+        android:id="@+id/btSignUp"
+        style="?android:textAppearanceSmall"
+        android:layout_width="150dp"
+        android:background="#66F9F6F6"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:text="Sign Up"
+        android:textStyle="bold"/>
+
+
+
+</LinearLayout>

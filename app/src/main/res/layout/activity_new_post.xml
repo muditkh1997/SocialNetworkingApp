@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context="mudit.com.myproject.Activities.NewPostActivity">
+
+    <EditText
+        android:id="@+id/etBody"
+        android:layout_width="match_parent"
+        android:padding="4dp"
+        android:layout_height="150dp"
+        android:gravity="top"
+        android:hint="What's on your mind"
+        android:textSize="30sp"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Attach Picture :"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:layout_alignBottom="@+id/imgCapture"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp" />
+
+        <ImageButton
+            android:id="@+id/imgCapture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@+id/imgGallery"
+            android:layout_toStartOf="@+id/imgGallery"
+            android:background="@drawable/capture" />
+
+        <ImageButton
+            android:id="@+id/imgGallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/gallery" />
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btAddPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Post"
+        android:textSize="24sp"/>
+    <ImageView
+        android:id="@+id/imgPicture"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        tools:src="@drawable/signup_image"/>
+
+</LinearLayout>

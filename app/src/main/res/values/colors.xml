@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF99FF</color>
+
+    <color name="gradient11">#FF99FF</color>
+    <color name="gradient12">#FF33FF</color>
+    <color name="gradient21">#FF99FF</color>
+    <color name="gradient22">#FF99FF</color>
+    <color name="gradient31">#CCFFFF</color>
+    <color name="gradient32">#FF99FF</color>
+    <color name="gradient41">#CCFFFF</color>
+    <color name="gradient42">#CCFFCC</color>
+    <color name="gradient51">#CCFF99</color>
+    <color name="gradient52">#CCFFCC</color>
+    <color name="gradient61">#CCFF99</color>
+    <color name="gradient62">#FFFF99</color>
+    <color name="gradient71">#FFFF66</color>
+    <color name="gradient72">#FFFFCC</color>
+    <color name="gradient81">#FFFF66</color>
+    <color name="gradient82">#FF99FF</color>
+    <color name="deep_purple_500">#673AB7</color>
+    <color name="indigo_500">#3F51B5</color>
+    <color name="blue_500">#2196F3</color>
+    <color name="cyan_500">#00BCD4</color>
+    <color name="light_blue_500">#03A9F4</color>
+</resources>

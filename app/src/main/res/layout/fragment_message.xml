@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="mudit.com.myproject.Fragments.MessageFragment">
+        <TextView
+            android:text="New Messages"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:background="#1a5711"
+            android:gravity="center|bottom"
+            android:layout_width="match_parent"
+            android:layout_height="46dp" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvNewMessages"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"></android.support.v7.widget.RecyclerView>
+        <TextView
+            android:text="CHATS"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:background="#1a5711"
+            android:gravity="center|bottom"
+            android:layout_width="match_parent"
+            android:layout_height="46dp" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvChats"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+            <ImageButton
+                android:layout_gravity="right|bottom"
+                android:background="@drawable/messagecontacts"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+        </FrameLayout>
+
+</LinearLayout>
+

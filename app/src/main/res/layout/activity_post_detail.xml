@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+tools:context="mudit.com.myproject.Activities.PostDetailActivity">
+<LinearLayout
+    android:id="@+id/llPost"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/detail_post_author_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_account_circle_40" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvDetailPostAuthor"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                style="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                tools:text="Some Name" />
+            <!--<TextView-->
+                <!--android:id="@+id/tvDetailPostAuthorEmail"-->
+                <!--android:textSize="20sp"-->
+                <!--style="@style/Base.TextAppearance.AppCompat.Small"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:gravity="center_vertical"-->
+                <!--tools:text="someauthor@email.com" />-->
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvDetailPostBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:padding="5dp"
+        tools:text="Hello everyone
+sdfjdfsjldsfdjsfldfjsllfdslfds" />
+    <ImageView
+        android:id="@+id/tvDetailPostPicture"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        />
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/comment_form"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@+id/llPost"
+    android:layout_marginTop="20dp"
+    android:weightSum="1.0">
+
+    <EditText
+        android:id="@+id/etComment"
+        android:layout_width="0dp"
+        android:layout_weight="0.8"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:hint="Write a comment..."/>
+
+    <Button
+        android:id="@+id/btPostComment"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_weight="0.2"
+        android:layout_height="wrap_content"
+        android:text="Post"/>
+
+</LinearLayout>
+
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/rvComments"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/comment_form"
+     />
+
+</RelativeLayout>

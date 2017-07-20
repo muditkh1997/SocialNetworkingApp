@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="mudit.com.myproject.Activities.MessageActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:text="Chats"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:background="#075e54"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="46dp" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvNewMessages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+    <!--<TextView-->
+        <!--android:text="CHATS"-->
+        <!--android:textSize="24sp"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:textStyle="bold"-->
+        <!--android:background="#1a5711"-->
+        <!--android:gravity="center|bottom"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="46dp" />-->
+    <!--<FrameLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/rvChats"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>-->
+        <!--<ImageButton-->
+            <!--android:layout_gravity="right|bottom"-->
+            <!--android:background="@drawable/messagecontacts"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp" />-->
+    <!--</FrameLayout>-->
+    <ImageButton
+        android:id="@+id/imgContacts"
+    android:layout_gravity="right|bottom"
+    android:background="@drawable/messagecontacts"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+    android:layout_width="50dp"
+    android:layout_height="50dp" />
+</FrameLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="mudit.com.myproject.Activities.UserProfile">
+
+    <ImageView
+        android:id="@+id/imgProfilePicture"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="120dp"
+        android:layout_height="121dp" />
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:text="Some User"/>
+    <View
+        android:layout_width="220dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#c0c0c0"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/imgFriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="81dp"
+            android:layout_marginStart="83dp"
+            tools:src="@drawable/capture"/>
+
+        <ImageButton
+            android:id="@+id/imgMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="81dp"
+            android:layout_marginRight="81dp"
+            tools:src="@drawable/gallery"/>
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#c0c0c0"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvUserPosts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
