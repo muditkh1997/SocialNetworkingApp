@@ -43,7 +43,7 @@
             android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".Activities.ViewImage"
-            android:theme="@style/CustomTheme" />
+            e />
         <activity android:name=".DialogBox.CustomDialog"></activity>
     </application>
 

@@ -54,4 +54,5 @@ public class CustomDialog extends Dialog implements android.view.View.OnClickLis
 //            }
 //        });
     }
+
 }

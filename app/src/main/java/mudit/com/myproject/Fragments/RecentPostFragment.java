@@ -72,7 +72,7 @@ public class RecentPostFragment extends Fragment {
                 startActivity(new Intent(getActivity(),NewPostActivity.class));
             }
         });
-        mdatabase=FirebaseDatabase.getInstance().getReference();
+
 //        Query postsQuery=mdatabase.child("posts");
 //        Log.d("MA", "onCreateView: "+postsQuery);
 //        mdatabase.child("Posts").addValueEventListener(new ValueEventListener() {
